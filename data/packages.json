@@ -1,0 +1,477 @@
+{
+  "metadata": {
+    "last_updated": "2026-03-04",
+    "currency": "USD",
+    "rates_apply_to": "Non-residents",
+    "version": "1.0"
+  },
+
+  "company": {
+    "name": "Kenya Group Joining Safaris",
+    "legal_entity": "Kudu Hills Safaris Ltd",
+    "contact": {
+      "email_bookings": "bookings@groupjoiningsafaris.com",
+      "email_general": "info@groupjoiningsafaris.com",
+      "phone": "+254 118 017 470",
+      "whatsapp": "+254 118 017 470",
+      "website": "https://www.groupjoiningsafaris.com",
+      "address": "Veterans House, Moi Avenue, Nairobi, Kenya"
+    },
+    "value_propositions": [
+      "Guaranteed departures — we never cancel a departure due to low numbers",
+      "Lowest costs through group cost-sharing model",
+      "Window seat guaranteed for every passenger",
+      "Professional experienced local guides"
+    ],
+    "memberships": [
+      "Tour Operators Society of Kenya (TOSK)",
+      "Tourism Regulatory Authority (TRA) registered",
+      "TripAdvisor listed",
+      "Safari Bookings listed"
+    ]
+  },
+
+  "packages": {
+    "NNP-HALF-DAY": {
+      "id": "NNP-HALF-DAY",
+      "name": "Half Day Nairobi National Park Group Safari",
+      "destination": "Nairobi National Park",
+      "duration_days": 0.5,
+      "duration_description": "Half day (6-7 hours)",
+      "max_group_size": 6,
+      "guaranteed_departure": true,
+      "meal_plan": "None (half day)",
+      "availability": "Daily departures",
+      "departures": {
+        "morning": {
+          "pickup_start": "06:00",
+          "park_entry": "07:00",
+          "return_approx": "12:30"
+        },
+        "afternoon": {
+          "pickup_start": "14:00",
+          "park_entry": "15:00",
+          "return_approx": "19:00"
+        }
+      },
+      "transport_rates_usd": {
+        "description": "Per person rate based on total passengers sharing vehicle",
+        "1_or_2_passengers": 90,
+        "3_passengers": 68,
+        "4_passengers": 54,
+        "5_passengers": 45,
+        "6_passengers": 36
+      },
+      "park_fees_usd_2026": {
+        "non_resident_adult": 87,
+        "non_resident_child": 47,
+        "child_age_range": "3-17 years",
+        "infant_age_range": "0-2 years (free)",
+        "validity": "Jan 1 – Dec 31, 2026"
+      },
+      "optional_addons": {
+        "giraffe_centre": {
+          "name": "Giraffe Centre",
+          "price_usd": 15,
+          "duration": "~1 hour",
+          "note": "Add after morning game drive"
+        },
+        "david_sheldrick_elephant_orphanage": {
+          "name": "David Sheldrick Wildlife Trust (Elephant Orphanage)",
+          "price_usd": 20,
+          "duration": "~1 hour",
+          "opening_hours": "11:00-12:00 daily",
+          "note": "Must be timed with morning departure; only open 11am-12pm"
+        }
+      },
+      "inclusions": [
+        "Transport in 4x4 safari vehicle",
+        "Professional driver-guide",
+        "Window seat guaranteed",
+        "Bottled water"
+      ],
+      "exclusions": [
+        "Park entry fees (quoted separately unless bundled)",
+        "Meals",
+        "Tips / gratuities",
+        "Optional add-ons (Giraffe Centre, David Sheldrick)",
+        "Personal travel insurance"
+      ],
+      "wildlife": {
+        "commonly_seen": [
+          "Lions", "Giraffes", "Common zebras", "Wildebeest", "Cape buffaloes",
+          "Warthogs", "Impalas", "Thomson's gazelles", "Grant's gazelles",
+          "Elands", "Baboons", "Ostriches", "400+ bird species"
+        ],
+        "possible_sightings": [
+          "Black rhinos (park is a rhino sanctuary, population ~70)",
+          "Leopards (rare)", "Cheetahs", "Spotted hyenas", "Hippos"
+        ]
+      },
+      "packing_list": [
+        "Camera with extra memory cards and battery",
+        "Sunscreen (SPF 50+ recommended)",
+        "Hat or cap",
+        "Sunglasses",
+        "Light jacket (mornings can be cool)",
+        "Binoculars (optional but recommended)"
+      ]
+    },
+
+    "MARA-3DAY-2N": {
+      "id": "MARA-3DAY-2N",
+      "name": "3 Days / 2 Nights Masai Mara Game Reserve Group Safari",
+      "destination": "Masai Mara National Reserve",
+      "duration_days": 3,
+      "duration_nights": 2,
+      "max_group_size": 7,
+      "guaranteed_departure": true,
+      "meal_plan": "Full Board (FB) — breakfast, lunch, and dinner included at camp",
+      "transport_rate_usd": {
+        "per_person_per_day": 45,
+        "total_per_person": 135,
+        "duration_days": 3,
+        "covers": "Nairobi–Mara–Nairobi return + all game drives within the reserve",
+        "note": "$45/person/day × 3 days = $135/person total. Accommodation and park fees quoted separately on request."
+      },
+      "park_fees_usd_2026": {
+        "non_resident_adult_jan_jun": 100,
+        "non_resident_adult_jul_dec": 200,
+        "non_resident_child_all_year": 50,
+        "child_age_range": "3-11 years",
+        "infant_age_range": "0-2 years (free)",
+        "note": "Park fees are per person per day. The 3-day safari includes 2 game drive days."
+      },
+      "itinerary_summary": {
+        "day_1": "Depart Nairobi early morning (~6am), drive to Masai Mara (~5-6 hours with Great Rift Valley viewpoint stop), arrive for lunch, afternoon game drive, dinner & overnight at camp.",
+        "day_2": "Full day in the Mara — morning and afternoon game drives with packed lunch in the bush. Evening at leisure at camp.",
+        "day_3": "Optional early morning game drive, breakfast at camp, check out, drive back to Nairobi (~arriving 2-3pm)."
+      },
+      "optional_activities": {
+        "hot_air_balloon_safari": {
+          "name": "Hot Air Balloon Safari over the Masai Mara",
+          "price_usd": "Contact for current pricing",
+          "timing": "Departs ~6:00am, returns ~9:30am with champagne bush breakfast"
+        },
+        "maasai_village_visit": {
+          "name": "Maasai Cultural Village Visit",
+          "price_usd": "Contact for current pricing"
+        }
+      },
+      "inclusions": [
+        "Transport in 4x4 safari vehicle (Nairobi–Mara–Nairobi)",
+        "Professional driver-guide throughout",
+        "Window seat guaranteed",
+        "2 nights accommodation at chosen camp (Full Board — all meals)",
+        "Bottled water during game drives",
+        "Great Rift Valley viewpoint stop (Day 1)"
+      ],
+      "exclusions": [
+        "Park entry fees (quoted separately unless bundled)",
+        "Drinks at camp (alcohol, sodas, juices)",
+        "Tips / gratuities (recommended: USD 10-15/day for guide, USD 5-10/day for camp staff)",
+        "Travel insurance (required — recommended to have medical evacuation cover)",
+        "Optional activities (balloon safari, village visit, etc.)",
+        "Personal expenses",
+        "Visa fees"
+      ],
+      "wildlife": {
+        "commonly_seen": [
+          "Lions", "Elephants", "Cape buffaloes", "Leopards (higher chance than most parks)",
+          "Cheetahs", "Giraffes", "Common zebras", "Wildebeest", "Hippos (Mara River)",
+          "Nile crocodiles (Mara River)", "Spotted hyenas", "Black-backed jackals",
+          "Warthogs", "Baboons", "Topi", "Hartebeest", "450+ bird species"
+        ],
+        "possible": [
+          "Black rhinos (very rare)", "African wild dogs (very rare)"
+        ],
+        "great_migration": {
+          "in_mara": "July–October",
+          "peak_river_crossings": "August–September",
+          "in_serengeti_tanzania": "November–June",
+          "note": "The wildebeest and zebra are in the Masai Mara from approximately July to October. River crossings at the Mara River are the most dramatic spectacle — timing varies daily and is never guaranteed."
+        }
+      },
+      "packing_list": [
+        "Camera with spare batteries and memory cards",
+        "Binoculars (strongly recommended)",
+        "Sunscreen (SPF 50+)",
+        "Insect repellent (DEET-based)",
+        "Warm fleece or jacket (mornings and evenings are cold, 10-15°C)",
+        "Neutral-coloured clothing (khaki, olive, brown — avoid bright colours and white)",
+        "Comfortable closed shoes or light boots",
+        "Hat and sunglasses",
+        "Torch / flashlight",
+        "Power bank for charging devices",
+        "Small daypack",
+        "Personal medications",
+        "Soft bag preferred (not hard suitcase — easier in the vehicle)"
+      ],
+      "accommodation_options": [
+        {
+          "id": "MARA-CHUI",
+          "name": "Mara Chui Resort Limited",
+          "category": "Mid-range",
+          "meal_plan": "Full Board",
+          "seasonal_rates_usd_per_person_per_night": {
+            "peak": {
+              "label": "PEAK Season",
+              "periods": ["July–August", "Dec 22–Jan 2", "Christmas"],
+              "single": 220, "double": 155, "triple": 137
+            },
+            "high": {
+              "label": "HIGH Season",
+              "periods": ["Jan 3–Mar 31", "June", "Sept–Oct", "Easter"],
+              "single": 140, "double": 100, "triple": 90
+            },
+            "low": {
+              "label": "LOW Season",
+              "periods": ["Apr 1–May 31", "Nov 1–Dec 21"],
+              "single": 130, "double": 85, "triple": 80
+            }
+          }
+        },
+        {
+          "id": "EMAIYAN",
+          "name": "Emaiyan Luxury Camp",
+          "category": "Luxury",
+          "meal_plan": "Full Board",
+          "seasonal_rates_usd_per_person_per_night": {
+            "high": {
+              "label": "HIGH Season",
+              "periods": ["July–August", "Easter", "Christmas Dec 24–Jan 2"],
+              "single": 470, "double": 310, "triple": 327
+            },
+            "regular": {
+              "label": "REGULAR Season",
+              "periods": ["January", "April", "June", "September", "December (non-Christmas)"],
+              "single": 290, "double": 190, "triple": 217
+            },
+            "low": {
+              "label": "LOW Season",
+              "periods": ["February", "March", "May", "October", "November"],
+              "single": 260, "double": 170, "triple": 200
+            }
+          }
+        },
+        {
+          "id": "OLMORAN",
+          "name": "Olmoran Tented Camp",
+          "category": "Mid-range",
+          "meal_plan": "Full Board",
+          "seasonal_rates_usd_per_person_per_night": {
+            "peak": {
+              "label": "PEAK Season",
+              "periods": ["Jul 1–Oct 31", "Dec 23–Jan 1"],
+              "single": 150, "double": 100, "triple": 87
+            },
+            "high": {
+              "label": "HIGH Season",
+              "periods": ["Jan 2–Mar 31", "Nov 1–Dec 22"],
+              "single": 160, "double": 90, "triple": 80
+            },
+            "low": {
+              "label": "LOW Season",
+              "periods": ["Apr 1–Jun 30"],
+              "single": 105, "double": 100, "triple": 87
+            },
+            "christmas_supplement": {
+              "label": "Christmas Supplement",
+              "periods": ["Dec 24–26", "Dec 31", "Jan 1"],
+              "single": 170, "double": 120, "triple": 107
+            }
+          }
+        },
+        {
+          "id": "ENKOROK",
+          "name": "Enkorok Mara Camp",
+          "category": "Mid-range",
+          "meal_plan": "Full Board",
+          "seasonal_rates_usd_per_person_per_night": {
+            "peak": {
+              "label": "PEAK Season",
+              "periods": ["Jul 1–Sep 30", "Dec 22–Jan 2"],
+              "single": 245, "double": 170, "triple": 153
+            },
+            "high": {
+              "label": "HIGH Season",
+              "periods": ["Jan 3–Mar 31", "Jun 1–30", "Oct 1–31"],
+              "single": 165, "double": 115, "triple": 103
+            },
+            "low": {
+              "label": "LOW Season",
+              "periods": ["Apr 1–May 31", "Nov 1–Dec 21"],
+              "single": 130, "double": 90, "triple": 83
+            }
+          }
+        },
+        {
+          "id": "JAMBO-MARA",
+          "name": "Jambo Mara Safari Lodge",
+          "category": "Mid-range",
+          "meal_plan": "Full Board",
+          "seasonal_rates_usd_per_person_per_night": {
+            "jan_apr": {
+              "label": "Jan 2–Apr 30",
+              "single": 125, "double": 85, "triple": 82
+            },
+            "may_jun": {
+              "label": "May 1–Jun 30",
+              "single": 160, "double": 95, "triple": 92
+            },
+            "jul_aug": {
+              "label": "Jul 1–Aug 31 (Peak Migration)",
+              "single": 320, "double": 200, "triple": 197
+            },
+            "sep_oct": {
+              "label": "Sep 1–Oct 31",
+              "single": 190, "double": 120, "triple": 117
+            },
+            "nov_jan": {
+              "label": "Nov 1–Jan 1",
+              "single": 125, "double": 85, "triple": 82
+            },
+            "easter": {
+              "label": "Easter Supplement (Apr 3–6, 2026)",
+              "single": 155, "double": 100, "triple": 92
+            },
+            "christmas": {
+              "label": "Christmas Supplement (Dec 23–Jan 1)",
+              "single": 160, "double": 103, "triple": 94
+            }
+          }
+        },
+        {
+          "id": "SOPA",
+          "name": "Masai Mara Sopa Lodge",
+          "category": "Upmarket",
+          "meal_plan": "Full Board",
+          "seasonal_rates_usd_per_person_per_night": {
+            "high": {
+              "label": "HIGH Season",
+              "periods": ["Jul 1–Oct 31", "Dec 22–Jan 1"],
+              "single": 283, "double": 213, "triple": 179
+            },
+            "regular": {
+              "label": "REGULAR Season",
+              "periods": ["Jan 2–Mar 31", "Jun 1–30", "Nov 1–Dec 21"],
+              "single": 182, "double": 135, "triple": 109
+            },
+            "low": {
+              "label": "LOW Season",
+              "periods": ["Apr 1–May 31"],
+              "single": 133, "double": 97, "triple": 81
+            },
+            "easter": {
+              "label": "Easter Supplement (Apr 3–6)",
+              "single": 163, "double": 127, "triple": 111
+            },
+            "christmas": {
+              "label": "Christmas Supplement (Dec 24–26, Dec 31, Jan 1)",
+              "single": 323, "double": 253, "triple": 219
+            }
+          }
+        },
+        {
+          "id": "MITI-MINGI",
+          "name": "Miti Mingi Eco Camp",
+          "aliases": ["Lenchada Budget Tents"],
+          "category": "Budget",
+          "meal_plan": "Full Board",
+          "seasonal_rates_usd_per_person_per_night": {
+            "high": {
+              "label": "HIGH Season",
+              "periods": ["July–September", "Easter", "Christmas"],
+              "single": 65, "double": 45, "triple": null
+            },
+            "low": {
+              "label": "LOW Season",
+              "periods": ["January–June (excl. Easter)", "October–December (excl. Christmas)"],
+              "single": 55, "double": 35, "triple": null
+            }
+          }
+        },
+        {
+          "id": "RHINO",
+          "name": "Rhino Tourist Camp",
+          "category": "Budget",
+          "meal_plan": "Full Board",
+          "seasonal_rates_usd_per_person_per_night": {
+            "peak": {
+              "label": "PEAK Season",
+              "periods": ["Jul 1–Sep 30"],
+              "single": 90, "double": 50, "triple": 44
+            },
+            "high": {
+              "label": "HIGH Season",
+              "periods": ["Jan 4–Mar 15"],
+              "single": 65, "double": 40, "triple": 37
+            },
+            "low": {
+              "label": "LOW Season",
+              "periods": ["Mar 16–Jun 30", "Oct 1–Dec 20"],
+              "single": 60, "double": 35, "triple": 32
+            },
+            "festive": {
+              "label": "Festive Season",
+              "periods": ["Dec 21–Jan 3"],
+              "single": 90, "double": 50, "triple": 44
+            }
+          }
+        },
+        {
+          "id": "FLAIR",
+          "name": "Flair Budget Camp",
+          "category": "Budget",
+          "meal_plan": "Full Board",
+          "seasonal_rates_usd_per_person_per_night": {
+            "peak_festive": {
+              "label": "PEAK/Festive Season",
+              "periods": ["Jul 1–Aug 31", "Dec 24–Jan 2"],
+              "single": 140, "double": 50, "triple": null
+            },
+            "low": {
+              "label": "LOW Season",
+              "periods": ["Jan 2–Jun 30", "Sep 1–Dec 23"],
+              "single": 95, "double": 35, "triple": null
+            }
+          }
+        }
+      ],
+      "room_types": {
+        "single": "Solo occupancy — your own room",
+        "double": "Two people sharing — 1 king-size bed OR 2 single beds",
+        "triple": "Three people sharing — 3 beds"
+      }
+    }
+  },
+
+  "seasonal_calendar_2026": {
+    "masai_mara_park_fee_periods": {
+      "low_rate_usd_100": "Jan 1 – Jun 30, 2026",
+      "high_rate_usd_200": "Jul 1 – Dec 31, 2026"
+    },
+    "special_dates_2026": {
+      "easter": "Apr 3–6, 2026",
+      "christmas": "Dec 22–26, 2026",
+      "new_year": "Dec 31, 2026 – Jan 2, 2027"
+    },
+    "general_season_guide": {
+      "low": ["April", "May", "November (early)"],
+      "high": ["January", "February", "March", "June", "September", "October"],
+      "peak": ["July", "August", "December (late)"]
+    }
+  },
+
+  "pricing_notes": {
+    "currency": "USD",
+    "rates_for": "Non-resident travellers",
+    "resident_rates": "Available — customers must identify as Kenyan citizen or East African resident and contact us for a quote",
+    "children": {
+      "nnp_child": "Age 3–17 years: USD 47/day park fee",
+      "mara_child": "Age 3–11 years: USD 50/day park fee, reduced accommodation rates at most properties",
+      "infant": "Age 0–2 years: Free park entry (transport to be confirmed)"
+    },
+    "what_is_total_cost": "Total cost = Transport rate + Park fees + Accommodation (2 nights for Mara) + any add-ons. All Mara accommodation rates are Full Board (all meals included)."
+  }
+}

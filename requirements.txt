@@ -1,0 +1,23 @@
+# Core AI
+anthropic>=0.39.0
+
+# Environment variable loading
+python-dotenv>=1.0.0
+
+# HTTP requests (for webhook notifications)
+requests>=2.31.0
+
+# ── Phase 2: Knowledge base / RAG (install when setting up Pinecone) ──
+# pinecone-client>=3.0.0
+# openai>=1.0.0          # for text-embedding-3-large (used with Pinecone)
+# langchain>=0.2.0
+# langchain-community>=0.2.0
+# tiktoken>=0.7.0
+
+# ── Phase 2: Web server (for wrapping agent as API) ──
+# fastapi>=0.111.0
+# uvicorn>=0.30.0
+
+# ── Development / testing ──
+# pytest>=8.0.0
+# pytest-asyncio>=0.23.0
