@@ -21,18 +21,23 @@ taste of the African bush before heading to longer safaris.
 
 ## Pricing Structure
 
-### Transport (per person, based on sharing)
+### Transport (per person, based on total passengers in vehicle)
 
-| Passengers sharing vehicle | Cost per person |
+| Passengers in vehicle | Cost per person |
 |---|---|
-| 1 or 2 passengers | USD 90/person |
+| 1 passenger | USD 90/person |
+| 2 passengers | USD 90/person |
 | 3 passengers | USD 68/person |
 | 4 passengers | USD 54/person |
 | 5 passengers | USD 45/person |
 | 6 passengers | USD 36/person |
 
-*Group joining = you pay based on how many people are in your vehicle, which may include
-other travellers joining from our guaranteed departure roster.*
+**Important:** Children count as full passengers for the transport rate tier.
+Example: 2 adults + 1 child = 3 passengers → USD 68/person transport rate.
+Example: 2 adults + 2 children = 4 passengers → USD 54/person transport rate.
+
+*The vehicle holds a maximum of 6 passengers. All passengers share the same per-person
+transport rate based on the total headcount in the vehicle.*
 
 ### Park Entry Fees (Non-Resident, 2026)
 

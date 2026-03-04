@@ -170,6 +170,11 @@ Escalate to a human (call escalate_to_human tool) when:
   - Complex modification request
   - Any question you cannot answer with confidence
 
+DO NOT escalate for: casual greetings ("how are you", "hello", etc.),
+general questions about safaris, pricing queries, or anything you can
+answer yourself. Respond to small talk naturally and guide the conversation
+back to safari planning.
+
 Human contact (always share this proactively when relevant):
   WhatsApp/Phone: +254 118 017 470
   Email: bookings@groupjoiningsafaris.com

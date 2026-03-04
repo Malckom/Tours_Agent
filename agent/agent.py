@@ -19,13 +19,13 @@ import os
 from datetime import date
 from typing import Any
 
-import anthropic
+from groq import Groq
 from dotenv import load_dotenv
 
 load_dotenv()
 
 from agent.config import (
-    CLAUDE_MODEL,
+    GROQ_MODEL,
     MAX_TOKENS,
     SYSTEM_PROMPT_PATH,
     TEMPERATURE,
@@ -59,13 +59,13 @@ class SafiAgent:
     """
 
     def __init__(self) -> None:
-        api_key = os.environ.get("ANTHROPIC_API_KEY")
+        api_key = os.environ.get("GROQ_API_KEY")
         if not api_key:
             raise EnvironmentError(
-                "ANTHROPIC_API_KEY environment variable is not set. "
+                "GROQ_API_KEY environment variable is not set. "
                 "Create a .env file (see .env.example) or set it in your shell."
             )
-        self.client = anthropic.Anthropic(api_key=api_key)
+        self.client = Groq(api_key=api_key)
         self.system_prompt: str = _load_system_prompt()
         self.conversation_history: list[dict[str, Any]] = []
 
@@ -103,54 +103,67 @@ class SafiAgent:
         Run one conversational turn, handling tool calls until a final
         text response is produced.
         """
-        # Build a mutable copy of history that we extend with tool call/result pairs
-        # within this turn only (tool use messages are ephemeral within the turn,
-        # not stored in self.conversation_history)
-        messages = list(self.conversation_history)
+        # Groq uses system as first message in the messages list
+        messages: list[dict[str, Any]] = [
+            {"role": "system", "content": self.system_prompt},
+        ] + list(self.conversation_history)
 
         while True:
-            response = self.client.messages.create(
-                model=CLAUDE_MODEL,
+            response = self.client.chat.completions.create(
+                model=GROQ_MODEL,
                 max_tokens=MAX_TOKENS,
                 temperature=TEMPERATURE,
-                system=self.system_prompt,
                 tools=TOOL_SCHEMAS,
+                tool_choice="auto",
                 messages=messages,
             )
 
-            logger.debug("Stop reason: %s", response.stop_reason)
+            choice = response.choices[0]
+            finish_reason = choice.finish_reason
+            logger.debug("Finish reason: %s", finish_reason)
 
             # If the model wants to call tools
-            if response.stop_reason == "tool_use":
-                # Add the assistant's tool-call message to the working messages
+            if finish_reason == "tool_calls":
+                assistant_msg = choice.message
+                # Append the assistant's tool-call message
                 messages.append({
                     "role": "assistant",
-                    "content": response.content,
+                    "content": assistant_msg.content or "",
+                    "tool_calls": [
+                        {
+                            "id": tc.id,
+                            "type": "function",
+                            "function": {
+                                "name": tc.function.name,
+                                "arguments": tc.function.arguments,
+                            },
+                        }
+                        for tc in assistant_msg.tool_calls
+                    ],
                 })
 
-                # Execute each tool call and collect results
-                tool_results = []
-                for block in response.content:
-                    if block.type == "tool_use":
-                        logger.info("Tool call: %s(%s)", block.name, json.dumps(block.input, default=str))
-                        result = execute_tool(block.name, block.input)
-                        logger.info("Tool result: %s", json.dumps(result, default=str)[:300])
-                        tool_results.append({
-                            "type": "tool_result",
-                            "tool_use_id": block.id,
-                            "content": json.dumps(result, default=str),
-                        })
-
-                # Add tool results as a user message and loop back
-                messages.append({
-                    "role": "user",
-                    "content": tool_results,
-                })
+                # Execute each tool call and append results
+                for tc in assistant_msg.tool_calls:
+                    try:
+                        tool_input = json.loads(tc.function.arguments)
+                    except json.JSONDecodeError as e:
+                        logger.warning("Failed to parse tool arguments: %s", e)
+                        tool_input = {}
+                    logger.info("Tool call: %s(%s)", tc.function.name, json.dumps(tool_input, default=str))
+                    try:
+                        result = execute_tool(tc.function.name, tool_input)
+                    except Exception as e:
+                        result = {"error": str(e)}
+                    logger.info("Tool result: %s", json.dumps(result, default=str)[:300])
+                    messages.append({
+                        "role": "tool",
+                        "tool_call_id": tc.id,
+                        "content": json.dumps(result, default=str),
+                    })
                 continue
 
             # Model produced a final text response
-            text_blocks = [b.text for b in response.content if hasattr(b, "text")]
-            return "\n".join(text_blocks)
+            return choice.message.content or ""
 
 
 # ─────────────────────────────────────────────────────────────

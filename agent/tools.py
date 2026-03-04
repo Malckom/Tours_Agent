@@ -217,6 +217,8 @@ def calculate_pricing(
         raise ToolError(f"Package '{package_id}' not found.")
 
     total_pax_count = sum(p.get("count", 1) for p in pax)
+    # All passengers (adults AND children) count toward the vehicle tier.
+    # Vehicle size determines the per-person transport rate.
     vehicle_size = group_size_in_vehicle or total_pax_count
     result: dict[str, Any] = {
         "package": pkg["name"],

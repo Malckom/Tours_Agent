@@ -55,8 +55,9 @@
         }
       },
       "transport_rates_usd": {
-        "description": "Per person rate based on total passengers sharing vehicle",
-        "1_or_2_passengers": 90,
+        "description": "Per person rate based on total passengers sharing vehicle (adults + children all count).",
+        "1_passenger": 90,
+        "2_passengers": 90,
         "3_passengers": 68,
         "4_passengers": 54,
         "5_passengers": 45,

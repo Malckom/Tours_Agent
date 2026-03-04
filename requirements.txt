@@ -1,4 +1,7 @@
-# Core AI
+# Core AI — Groq (active, free tier)
+groq>=0.13.0
+
+# Core AI — Anthropic (switch back when credits added)
 anthropic>=0.39.0
 
 # Environment variable loading

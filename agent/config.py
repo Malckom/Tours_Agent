@@ -9,6 +9,7 @@ from datetime import date
 # ─────────────────────────────────────────────
 # API Keys (loaded from environment)
 # ─────────────────────────────────────────────
+GROQ_API_KEY: str = os.environ.get("GROQ_API_KEY", "")
 ANTHROPIC_API_KEY: str = os.environ.get("ANTHROPIC_API_KEY", "")
 PINECONE_API_KEY: str = os.environ.get("PINECONE_API_KEY", "")
 PINECONE_INDEX_NAME: str = os.environ.get("PINECONE_INDEX_NAME", "kenya-safari-knowledge")
@@ -21,9 +22,10 @@ WHATSAPP_API_TOKEN: str = os.environ.get("WHATSAPP_API_TOKEN", "")
 # ─────────────────────────────────────────────
 # Model Configuration
 # ─────────────────────────────────────────────
-CLAUDE_MODEL: str = "claude-sonnet-4-5"          # Swap to claude-opus-4 for higher quality
-MAX_TOKENS: int = 2048                             # Max response length
-TEMPERATURE: float = 0.3                           # Lower = more factual, consistent
+GROQ_MODEL: str = "llama-3.3-70b-versatile"   # Groq free tier
+CLAUDE_MODEL: str = "claude-sonnet-4-5"        # Anthropic (switch back later)
+MAX_TOKENS: int = 2048
+TEMPERATURE: float = 0.3
 
 # ─────────────────────────────────────────────
 # Company Constants (never changes at runtime)
